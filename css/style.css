@@ -1,0 +1,99 @@
+.wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.jpg);
+  position: relative;
+}
+
+.fnvc {
+  width: 300px;
+  position: absolute;
+  animation: fnvcanimation 5s infinite linear alternate;
+}
+
+.dc {
+  width: 600px;
+  position: absolute;
+  animation: dcanimation 5s infinite linear alternate;
+}
+
+.ab {
+  position: absolute;
+  width: 200px;
+  animation: abanimation 5s infinite linear;
+}
+
+.nuke {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 400px;
+  animation: nukea 5s infinite linear;
+}
+
+.tw {
+  width: 100px;
+  position: absolute;
+  animation: twanimation 9s infinite linear alternate;
+}
+
+@keyframes fnvcanimation {
+  0% {
+    left: 35%;
+    bottom: 0%;
+  }
+  100% {
+    left: 0%;
+    bottom: 0%;
+  }
+}
+
+@keyframes dcanimation {
+  0% {
+    right: 0%;
+    bottom: 0%;
+  }
+  100% {
+    right: 30%;
+    bottom: 0%;
+  }
+}
+
+@keyframes twanimation {
+  0% {
+    left: 0%;
+    bottom: 20%;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    left: 100%;
+    bottom: 20%;
+    transform: rotate(1800deg);
+  }
+}
+
+@keyframes abanimation {
+  0% {
+    right: 0%;
+    top: 0%;
+  }
+
+  100% {
+    right: 45%;
+    top: 45%;
+  }
+}
+
+@keyframes nukea {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
